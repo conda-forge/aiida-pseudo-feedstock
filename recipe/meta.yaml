@@ -24,7 +24,7 @@ requirements:
     - pint ~=0.16.1
     - python >=3.8
     - requests ~=2.20
- 
+
 test:
   imports:
     - aiida_pseudo
