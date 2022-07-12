@@ -1,5 +1,5 @@
 {% set name = "aiida-pseudo" %}
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiida-pseudo-{{ version }}.tar.gz
-  sha256: cafd1b556bd51bd9569c6b62d73e8f8058a91d9575929c904e99171bf4971493
+  sha256: cb19161089ca31b2faffd4a7b150b441680c8c57845c356d612984d1bd17ef63
 
 build:
   noarch: python
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
+    - flit-core >=3.4,<4
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - aiida-core ~=1.4
-    - click ~=7.0
-    - click-completion ~=0.5
+    - aiida-core ~=2.0
+    - click ~=8.0
     - pint ~=0.16.1
-    - python >=3.7
+    - python >=3.8
     - requests ~=2.20
 
 test:
@@ -39,7 +39,7 @@ about:
   summary: AiiDA plugin that simplifies working with pseudo potentials.
   dev_url: https://github.com/aiidateam/aiida-pseudo
   license: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
 
 extra:
   recipe-maintainers:
