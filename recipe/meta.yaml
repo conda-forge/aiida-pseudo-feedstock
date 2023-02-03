@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - aiida-core ~=2.0
+    - aiida-core ~=2.1
     - click ~=8.0
     - pint ~=0.16.1
     - python >=3.8
@@ -44,3 +44,5 @@ about:
 extra:
   recipe-maintainers:
     - chrisjsewell
+    - mbercx
+    - sphuber
