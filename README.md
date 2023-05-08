@@ -1,11 +1,11 @@
-About aiida-pseudo
-==================
+About aiida-pseudo-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aiida-pseudo-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/aiida-pseudo/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aiida-pseudo-feedstock/blob/main/LICENSE.txt)
 
 Summary: AiiDA plugin that simplifies working with pseudo potentials.
 
@@ -146,4 +146,6 @@ Feedstock Maintainers
 =====================
 
 * [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@mbercx](https://github.com/mbercx/)
+* [@sphuber](https://github.com/sphuber/)
 
