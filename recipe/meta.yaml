@@ -1,5 +1,5 @@
 {% set name = "aiida-pseudo" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e3fa67bc8deb2d7220b5c26b880c8630f61f3b54816ff737fb91a68b15429df9
+  sha256: f92da3d2fadc2d1aafee7aaa8a338e3c833f2c80d6828d9e877c2d00739a8192
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - python >=3.9
   run:
     - aiida-core ~=2.6
-    - click ~=8.0
-    - pint ~=0.23.0
+    - click ~=8.0,<8.2
+    - pint >=0.23.0,<0.25.0
     - python >=3.9
     - requests ~=2.20
 
