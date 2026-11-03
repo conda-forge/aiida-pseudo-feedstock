@@ -1,13 +1,13 @@
 {% set name = "aiida-pseudo" %}
-{% set version = "1.8.0" %}
+{% set version = "1.11.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a4539a0a4ec304d06f4313f814c297b94cd156606694255d698b1983c666f3a4
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 6dde6f4b2910d438f101156ef7aba59420b29e4314dc1b0271153d43648b1c51
 
 build:
   noarch: python
